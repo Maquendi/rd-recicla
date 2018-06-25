@@ -8,23 +8,26 @@
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>rd-recicla</name>
-
-    <build>
-        <finalName>rd-recicla</finalName>
+	
+	
+	<build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                 <artifactId>maven-dependency-plugin</artifactId>
-                
-                <version>2.5.1</version>
-                <inherited>true</inherited>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals><goal>copy-dependencies</goal></goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
+</project>
+       
 
     <dependencyManagement>
         <dependencies>
