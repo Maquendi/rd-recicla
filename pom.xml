@@ -13,7 +13,7 @@
 	
 	
 	
-	
+	<!--
 	<build>
         <finalName>rd-recicla</finalName>
         <plugins>
@@ -28,11 +28,12 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build> -->
 	
 	
-	<!--
+	
 	<build>
+         <finalName>rd-recicla</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -48,8 +49,7 @@
             </plugin>
         </plugins>
     </build>
-</project> 
-       -->
+
 
     <dependencyManagement>
         <dependencies>
