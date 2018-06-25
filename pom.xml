@@ -13,14 +13,14 @@
 	
 	
 	
-	<!--
+	
 	<build>
         <finalName>rd-recicla</finalName>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.0.1</version>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
                 <inherited>true</inherited>
                 <configuration>
                     <source>1.8</source>
@@ -28,11 +28,11 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build> -->
+    </build>
 	
 	
 	
-	<build>
+<!--	<build>
          <finalName>rd-recicla</finalName>
         <plugins>
             <plugin>
@@ -48,7 +48,7 @@
                 </executions>
             </plugin>
         </plugins>
-    </build>
+    </build> -->
 
 
     <dependencyManagement>
